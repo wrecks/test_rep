@@ -7,5 +7,6 @@ i2c = machine.I2C(-1,scl=machine.Pin(27), sda=machine.Pin(32))
 
 devices=i2c.scan()
 print(devices)
+print('test')
 
 
