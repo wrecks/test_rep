@@ -10,7 +10,7 @@ button = Pin(15, Pin.IN)
 
 while True:
   button_state = button.value()
-  buzz=PWM(Pin(32), freq=10)
+  buzz=PWM(Pin(32), freq=3000)
   buzz.duty(1001) if button_state==1 else buzz.duty(0)
 
       
