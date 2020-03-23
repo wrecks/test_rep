@@ -11,7 +11,7 @@ button = Pin(15, Pin.IN)
 while True:
   button_state = button.value()
   buzz=PWM(Pin(32), freq=500)
-  buzz.duty(1001) if button_state==1 else buzz.duty(0)
+  buzz.duty(500) if button_state==1 else buzz.duty(0)
 
       
       #led.value(button_state)
